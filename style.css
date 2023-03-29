@@ -17,7 +17,8 @@ ul,
 .website-intro,
 .middle-section,
 .four-boxes,
-.box {
+.box,
+.bottom-section {
   display: flex;
 }
 
@@ -25,7 +26,8 @@ ul,
 body,
 .website-intro,
 .middle-section,
-.box {
+.box,
+.bottom-section {
   flex-direction: column;
 }
 
@@ -125,11 +127,12 @@ ul {
 
 .box {
   flex-basis: 150px;
+  gap: 16px;
 }
 
 .middle-img {
   border-width: 4px;
-  border-color: black;
+  border-color: #3882f6;
   border-style: solid;
   border-radius: 8px;
   height: 150px;
@@ -141,3 +144,25 @@ ul {
   font-size: 18px;
   text-align: center;
 }
+
+/* styling for .bottom-section */
+
+.bottom-section {
+  background-color: #e5e7eb;
+  align-items: center;
+  padding: 48px 400px;
+}
+
+.bottom-section > blockquote {
+  font-size: 36px;
+  font-weight: 100;
+  color: #1f2937;
+}
+
+.bottom-section > p {
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 18px;
+  align-self: flex-end;
+}
+
