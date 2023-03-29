@@ -1,0 +1,55 @@
+/* Styling resets */
+
+p,
+h1,
+h2,
+blockquote {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Anything that needs display: flex */
+body,
+.header,
+ul {
+  display: flex;
+}
+
+/* Anything that needs flex-direction: column */
+body {
+  flex-direction: column;
+}
+
+/* Other styling */
+
+body {
+  font-family: sans-serif;
+}
+
+/* Header styling */
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 8px 200px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: extra-bold;
+  color: #f9faf8
+}
+
+.header-link {
+  font-size:18px;
+  color: #e5e7eb;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  gap: 16px;
+}
+
+/* hero top-section styling */
