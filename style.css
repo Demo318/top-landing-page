@@ -175,13 +175,13 @@ ul {
 /* styles for call-to-action */
 
 .call-to-action {
-  padding: 100px 250px;
+  padding: 100px 0px;
   justify-content: center;
 }
 
 .cta-modal {
   background-color: #3882f6;
-  padding: 56px 200px;
+  padding: 56px 150px;
   border-radius: 24px;
   justify-content: space-between;
   gap: 50px;
