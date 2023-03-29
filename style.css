@@ -18,7 +18,10 @@ ul,
 .middle-section,
 .four-boxes,
 .box,
-.bottom-section {
+.bottom-section,
+.call-to-action,
+.cta-modal,
+.cta-text {
   display: flex;
 }
 
@@ -27,7 +30,8 @@ body,
 .website-intro,
 .middle-section,
 .box,
-.bottom-section {
+.bottom-section,
+.cta-text {
   flex-direction: column;
 }
 
@@ -166,3 +170,36 @@ ul {
   align-self: flex-end;
 }
 
+/* styles for call-to-action */
+
+.call-to-action {
+  padding: 72px 250px;
+  justify-content: center;
+}
+
+.cta-modal {
+  background-color: #3882f6;
+  padding: 56px 200px;
+  border-radius: 24px;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.cta-text > h2 {
+  color: #f9faf8;
+}
+
+.cta-text > p {
+  color: #e5e7eb;
+}
+
+.cta-modal > button {
+  color: #f9faf8;
+  border-color: #f9faf8;
+  background-color: #3882f6;
+  border-style: solid;
+  padding: 10px 40px;
+  border-width: 3px;
+  border-radius: 8px;
+  font-size: 18px;
+}
