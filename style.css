@@ -21,7 +21,8 @@ ul,
 .bottom-section,
 .call-to-action,
 .cta-modal,
-.cta-text {
+.cta-text,
+.footer {
   display: flex;
 }
 
@@ -127,6 +128,7 @@ ul {
 
 .four-boxes {
   justify-content: space-around;
+  flex: wrap;
 }
 
 .box {
@@ -173,7 +175,7 @@ ul {
 /* styles for call-to-action */
 
 .call-to-action {
-  padding: 72px 250px;
+  padding: 100px 250px;
   justify-content: center;
 }
 
@@ -201,5 +203,19 @@ ul {
   padding: 10px 40px;
   border-width: 3px;
   border-radius: 8px;
+  font-size: 18px;
+}
+
+/* style for footer */
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  background: #1f2937;
+}
+
+.footer > p {
+  color: #e5e7eb;
   font-size: 18px;
 }
