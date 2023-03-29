@@ -3,7 +3,8 @@
 p,
 h1,
 h2,
-blockquote {
+blockquote,
+body {
   margin: 0px;
   padding: 0px;
 }
@@ -13,13 +14,18 @@ body,
 .header,
 ul,
 .top-section,
-.website-intro {
+.website-intro,
+.middle-section,
+.four-boxes,
+.box {
   display: flex;
 }
 
 /* Anything that needs flex-direction: column */
 body,
-.website-intro {
+.website-intro,
+.middle-section,
+.box {
   flex-direction: column;
 }
 
@@ -97,4 +103,41 @@ ul {
   border-style: none;
   padding: 10px;
   border-radius: 8px;
+}
+
+/* middle section styling */
+
+.middle-section {
+  align-items: center;
+  padding: 48px 250px;
+  gap: 48px;
+}
+
+.middle-section > h2 {
+  font-size:36px;
+  font-weight: extra-bold;
+  color: #1f2937;
+}
+
+.four-boxes {
+  justify-content: space-around;
+}
+
+.box {
+  flex-basis: 150px;
+}
+
+.middle-img {
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  height: 150px;
+  width: 150px;
+}
+
+.box > p {
+  color: hsl(0, 0%, 36%);
+  font-size: 18px;
+  text-align: center;
 }
