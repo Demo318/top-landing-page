@@ -11,12 +11,15 @@ blockquote {
 /* Anything that needs display: flex */
 body,
 .header,
-ul {
+ul,
+.top-section,
+.website-intro {
   display: flex;
 }
 
 /* Anything that needs flex-direction: column */
-body {
+body,
+.website-intro {
   flex-direction: column;
 }
 
@@ -32,12 +35,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #1f2937;
-  padding: 8px 200px;
+  padding: 8px 250px;
 }
 
 .logo-text {
   font-size: 24px;
-  font-weight: extra-bold;
   color: #f9faf8
 }
 
@@ -53,3 +55,46 @@ ul {
 }
 
 /* hero top-section styling */
+
+.top-section {
+  padding: 100px 250px;
+  background-color: #1f2937;
+  gap: 96px;
+}
+
+.hero-placeholder {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.website-intro {
+  gap: 16px;
+}
+
+.website-intro,
+.hero-placeholder {
+  flex: 1;
+}
+
+.website-intro > h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: extra-bold;
+}
+
+.website-intro > p {
+  font-size:18px;
+  color: #e5e7eb;
+}
+
+.website-intro > button {
+  max-width: 124px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-style: none;
+  padding: 10px;
+  border-radius: 8px;
+}
